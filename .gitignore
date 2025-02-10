@@ -1,0 +1,69 @@
+# Ignore Visual Studio user-specific files
+.vs/
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# Ignore build output
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+*.tlog
+*.lastbuildstate
+
+# Ignore packages and dependencies
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+PackageRestoreFailed.*
+
+# Ignore compiled files and caches
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.obj
+*.so
+*.idb
+*.lib
+*.psess
+*.pdb
+*.exp
+*.pdb
+*.iobj
+*.ipdb
+
+# Ignore test results
+TestResults/
+*.trx
+*.coverage
+*.testsettings
+
+# Ignore NuGet cache
+.nuget/
+**/packages/*/
+!**/packages/build/
+
+# Ignore Rider and ReSharper files
+.idea/
+*.sln.iml
+*.dotSettings
+*.DotSettings.user
+
+# Ignore temporary files
+_Temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*.resx.sln
+*.sln.suo
+
+# Ignore generated files
+Generated_Code/
+GeneratedFiles/
