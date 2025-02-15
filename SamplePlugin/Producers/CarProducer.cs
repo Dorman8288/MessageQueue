@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.Attributes;
 using Common.Interfaces;
 using SamplePlugin.Models;
 using System;
@@ -7,12 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamplePlugin
+namespace SamplePlugin.Producers
 {
+    [ProducerConsumerImplementationData(3, 1)]
     internal class CarProducer : IProducer<Car>
     {
+        public CarProducer() { }
         public Car Produce()
         {
+            Thread.Sleep(5000);
             var random = new Random();
             var generate = Utils.GenerateRandomString;
             var maxStringLength = 100;

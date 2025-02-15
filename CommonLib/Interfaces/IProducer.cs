@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Interfaces
 {
-    public interface IProducer
-    {
-        string Produce();
-    }
-
-    public interface IProducer<T>
+    public interface IProducer<out T>
     {
         T Produce();
     }
